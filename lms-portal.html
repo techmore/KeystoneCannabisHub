@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PA Cannabis LMS Portal — Vendor-Neutral Training Platform — Keystone Cannabis Hub</title>
+<meta name="description" content="A proposed vendor-neutral Learning Management System (LMS) for Pennsylvania's cannabis industry — bridging the gap between university education and real workplace expectations through standardized training, certification, and ongoing professional development.">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+.role-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; margin: 1.5rem 0; }
+.role-card { background: var(--card); border-radius: var(--radius); padding: 1.5rem; box-shadow: var(--shadow); border: 1px solid rgba(0,0,0,.04); border-top: 4px solid var(--green); }
+.role-card.teacher { border-top-color: #6c63ff; }
+.role-card.worker { border-top-color: var(--green-light); }
+.role-card.business { border-top-color: var(--gold); }
+.role-card.manager { border-top-color: #e76f51; }
+.role-card h3 { font-size: 1.1rem; font-weight: 600; margin-bottom: .5rem; color: var(--green-dark); }
+.role-card p { font-size: .88rem; color: var(--text-light); line-height: 1.6; }
+.role-card ul { margin: .5rem 0 0 1.25rem; font-size: .85rem; color: var(--text-light); }
+.role-card ul li { margin-bottom: .3rem; }
+.module-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.module { background: var(--bg); border-radius: 8px; padding: 1.25rem; border: 1px solid #eee; }
+.module h4 { font-size: .95rem; font-weight: 600; color: var(--green-dark); margin-bottom: .4rem; }
+.module p { font-size: .82rem; color: var(--text-light); line-height: 1.5; }
+.module .tag { display: inline-block; font-size: .7rem; font-weight: 600; padding: .1rem .5rem; border-radius: 99px; margin-top: .4rem; background: var(--gold-light); color: var(--green-dark); }
+.tag.core { background: #d4edda; color: #155724; }
+.tag.ops { background: #cce5ff; color: #004085; }
+.tag.lead { background: #f8d7da; color: #721c24; }
+.tag.deep { background: #e8daef; color: #6c3483; }
+.flow-step { display: flex; gap: 1rem; align-items: flex-start; margin-bottom: 1.5rem; }
+.flow-num { flex-shrink: 0; width: 36px; height: 36px; background: var(--green); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: .9rem; }
+.flow-text h4 { font-size: 1rem; font-weight: 600; color: var(--green-dark); }
+.flow-text p { font-size: .88rem; color: var(--text-light); }
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header>
+<div class="container inner">
+  <a href="https://techmore.github.io/KeystoneCannabisHub/" class="logo">&#9883; Keystone<span>Cannabis</span>Hub</a>
+  <nav>
+    <a href="https://techmore.github.io/KeystoneCannabisHub/">Home</a>
+    <a href="about.html">About</a>
+    <a href="laws.html">Law</a>
+    <a href="clinical-registrants/">CRs</a>
+    <a href="universities.html">Universities</a>
+    <a href="education.html">Education</a>
+    <a href="lms-portal.html" class="active">LMS</a>
+    <a href="business-models.html">Models</a>
+    <a href="social-impact.html">Impact</a>
+    <a href="science.html">Science</a>
+    <a href="get-involved.html">Get Involved</a>
+  </nav>
+</div>
+</header>
+
+<main id="main">
+<div class="page-header">
+<div class="container">
+  <span class="subtitle">Proposed Platform</span>
+  <h1>PA Cannabis LMS Portal</h1>
+  <p>A vendor-neutral Learning Management System for Pennsylvania's cannabis industry — connecting university education, workplace expectations, and career-long professional development under one platform.</p>
+</div>
+</div>
+
+<section>
+<div class="container prose">
+
+  <div class="info-box">
+    <h4>What This Is</h4>
+    <p>This is a <strong>concept and blueprint</strong> for an open, vendor-neutral LMS tailored to Pennsylvania's cannabis ecosystem. It is not built yet — this page defines the vision, user roles, training modules, and implementation pathway so that universities, employers, and industry professionals can evaluate, contribute to, or adopt it. Think of it as a shared training infrastructure for the entire PA cannabis industry.</p>
+  </div>
+
+  <h2>The Gap This Fills</h2>
+  <p>Right now, PA has 12+ universities offering cannabis degrees and certificates, dozens of dispensaries hiring graduates, and hundreds of workers entering the industry each year. But there is a disconnect:</p>
+  <ul>
+    <li><strong>Universities</strong> teach theory and plant science, but cannot replicate the compliance, security, and customer-service realities of a working dispensary or grow facility</li>
+    <li><strong>Employers</strong> spend weeks training every new hire on basics that should be standardized — PA law, HIPAA, seed-to-sale, COA reading</li>
+    <li><strong>Workers</strong> have no way to validate their skills, prove competency to future employers, or pursue structured career progression</li>
+    <li><strong>No vendor-neutral standard exists</strong> — every CR and dispensary chain runs its own training in isolation, creating inconsistency across the industry</li>
+  </ul>
+
+  <h2>Five User Roles</h2>
+  <p>The LMS is designed around five distinct user types, each with their own dashboard, training tracks, and goals:</p>
+
+  <div class="role-grid">
+    <div class="role-card teacher">
+      <h3>&#127891; Teachers &amp; Universities</h3>
+      <p>Validate that students aren't just educated — they're ready for the realities of a regulated cannabis workplace.</p>
+      <ul>
+        <li>Align course curriculum with industry-validated competencies</li>
+        <li>Assign LMS modules as pre-graduation requirements</li>
+        <li>Track cohort completion rates and skill gaps</li>
+        <li>Get employer feedback on graduate readiness</li>
+        <li>Integrate LMS certificates into degree programs</li>
+      </ul>
+    </div>
+    <div class="role-card worker">
+      <h3>&#128188; Workers &amp; Job Seekers</h3>
+      <p>Validate your personal skill set, earn portable certifications, and demonstrate readiness to any PA cannabis employer.</p>
+      <ul>
+        <li>Complete core compliance modules for industry entry</li>
+        <li>Yearly recertification to stay current</li>
+        <li>Self-assess and fill gaps in your knowledge</li>
+        <li>Build a portable credential portfolio</li>
+        <li>Explore career pathway tracks (dispensary agent, cultivator, lab tech, manager)</li>
+      </ul>
+    </div>
+    <div class="role-card business">
+      <h3>&#127970; Businesses &amp; Employers</h3>
+      <p>Adopt a standardized training backbone for your entire workforce — from first-day onboarding through yearly compliance recertification.</p>
+      <ul>
+        <li>Assign predefined training tracks by role</li>
+        <li>Track completion, compliance, and recertification dates</li>
+        <li>Reduce per-hire onboarding time and cost</li>
+        <li>Create custom modules for internal SOPs and brand-specific training</li>
+        <li>Get industry-wide benchmarking data (anonymized)</li>
+      </ul>
+    </div>
+    <div class="role-card manager">
+      <h3>&#128200; Managers &amp; Business Owners</h3>
+      <p>Access industry-specific leadership training, quarterly regulatory updates, and deep dives into business strategy — all condensed for busy operators.</p>
+      <ul>
+        <li>Leadership &amp; management tracks tailored to cannabis</li>
+        <li>Quarterly industry updates with key changes in 10 minutes or less</li>
+        <li>Business tactics: financial modeling, zoning strategy, HR compliance</li>
+        <li>Deep dives into datasets, market research, and case studies</li>
+        <li>Curated podcasts and interviews with field leaders for optional extended learning</li>
+      </ul>
+    </div>
+    <div class="role-card" style="border-top-color: #6f42c1;">
+      <h3>&#9881; Platform Admin</h3>
+      <p>Manage users, content, certifications, and integrations across the entire platform.</p>
+      <ul>
+        <li>Role &amp; permission management</li>
+        <li>Content versioning and update scheduling</li>
+        <li>Certificate issuance and verification</li>
+        <li>University and employer partnership management</li>
+        <li>Analytics and reporting</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>Training Modules</h2>
+  <p>Organized by category. Modules can be assigned individually or grouped into tracks by role. Each module includes a condensed overview (15&ndash;30 minutes) with an optional deep dive (1&ndash;3 hours) for those who want more.</p>
+
+  <h3>Core Compliance (All Roles)</h3>
+  <div class="module-grid">
+    <div class="module"><h4>PA Medical Marijuana Act Overview</h4><p>History, structure, and key provisions of PA's medical program. Who qualifies, what's covered, and how enforcement works.</p><span class="tag core">Core</span></div>
+    <div class="module"><h4>HIPAA &amp; Patient Privacy</h4><p>Federal and state privacy requirements for handling patient information in a cannabis setting.</p><span class="tag core">Core</span></div>
+    <div class="module"><h4>Workplace Safety (OSHA Basics)</h4><p>General duty clause, hazard communication, PPE requirements, and emergency action plans for cannabis facilities.</p><span class="tag core">Core</span></div>
+    <div class="module"><h4>Seed-to-Sale Tracking</h4><p>How PA's traceability system works, what gets tracked at each stage, and common compliance pitfalls.</p><span class="tag core">Core</span></div>
+    <div class="module"><h4>COA Reading &amp; Lab Results</h4><p>How to read a Certificate of Analysis — potency, terpenes, contaminants, and what each result means for patients.</p><span class="tag core">Core</span></div>
+    <div class="module"><h4>Security &amp; Surveillance Protocols</h4><p>PA DOH security requirements: camera placement, access control, alarm systems, and incident reporting.</p><span class="tag core">Core</span></div>
+  </div>
+
+  <h3>Dispensary Operations</h3>
+  <div class="module-grid">
+    <div class="module"><h4>Patient Consultation &amp; Customer Service</h4><p>How to guide patients through product selection, understand their needs, and provide education without making medical claims.</p><span class="tag ops">Ops</span></div>
+    <div class="module"><h4>Product Knowledge</h4><p>Cannabis product categories: flower, concentrates, edibles, topicals, tinctures, capsules. Effects, onset times, and dosing considerations.</p><span class="tag ops">Ops</span></div>
+    <div class="module"><h4>Inventory Management &amp; Reconciliation</h4><p>Daily counts, discrepancy investigation, waste documentation, and METRC integration at the retail level.</p><span class="tag ops">Ops</span></div>
+    <div class="module"><h4>POS &amp; Transaction Compliance</h4><p>Proper patient verification, purchase limits, cash handling, and transaction recordkeeping.</p><span class="tag ops">Ops</span></div>
+  </div>
+
+  <h3>Cultivation &amp; Processing</h3>
+  <div class="module-grid">
+    <div class="module"><h4>Good Manufacturing Practices (GMP)</h4><p>Sanitation, cross-contamination prevention, environmental monitoring, and documentation requirements for cannabis processing.</p><span class="tag ops">Ops</span></div>
+    <div class="module"><h4>Cultivation Environment Control</h4><p>Lighting, temperature, humidity, irrigation, and nutrient management for consistent, high-quality flower production.</p><span class="tag ops">Ops</span></div>
+    <div class="module"><h4>Extraction Methods Overview</h4><p>CO2, ethanol, and hydrocarbon extraction — how each works, safety considerations, and end-product characteristics.</p><span class="tag ops">Ops</span></div>
+    <div class="module"><h4>Quality Control &amp; Batch Tracking</h4><p>Sampling protocols, in-process testing, stability studies, and batch reconciliation from trim to finished product.</p><span class="tag ops">Ops</span></div>
+  </div>
+
+  <h3>Leadership &amp; Management</h3>
+  <div class="module-grid">
+    <div class="module"><h4>Cannabis-Specific HR &amp; Hiring</h4><p>PA-specific hiring requirements, background check protocols, employee cannabis use policies, and inclusive hiring practices.</p><span class="tag lead">Leadership</span></div>
+    <div class="module"><h4>Team Management &amp; Communication</h4><p>Building and managing a diverse team in a high-compliance, fast-paced environment. Conflict resolution and performance management.</p><span class="tag lead">Leadership</span></div>
+    <div class="module"><h4>Financial Planning &amp; P&amp;L Management</h4><p>Reading financial statements, managing margins in a regulated price environment, budgeting for compliance costs, and planning for scale.</p><span class="tag lead">Leadership</span></div>
+    <div class="module"><h4>Regulatory Compliance Management</h4><p>Building a compliance program, preparing for DOH inspections, managing permit conditions, and responding to violations.</p><span class="tag lead">Leadership</span></div>
+    <div class="module"><h4>Social Equity &amp; Inclusive Operations</h4><p>PA's diversity requirements, Employment First alignment, disability hiring programs, and community engagement strategies.</p><span class="tag lead">Leadership</span></div>
+  </div>
+
+  <h3>Business Owner Track</h3>
+  <div class="module-grid">
+    <div class="module"><h4>Business Structure &amp; Formation</h4><p>LLC vs. B-Corp vs. non-profit: tax implications, liability protection, and mission alignment for cannabis ventures.</p><span class="tag deep">Owner</span></div>
+    <div class="module"><h4>Funding &amp; Capital Strategy</h4><p>Investment options, grant opportunities, revenue-based financing, and the realities of cannabis fundraising in 2026.</p><span class="tag deep">Owner</span></div>
+    <div class="module"><h4>Real Estate &amp; Zoning Strategy</h4><p>Site selection, municipal zoning for cannabis uses, permitting timelines, and lease vs. build considerations.</p><span class="tag deep">Owner</span></div>
+    <div class="module"><h4>M&amp;A and Partnership Structures</h4><p>Understanding CR permit transfers, partnership agreements, revenue-sharing models, and exit strategies.</p><span class="tag deep">Owner</span></div>
+    <div class="module"><h4>Scaling Operations</h4><p>From single-site to multi-site: operational infrastructure, management team building, and systems for growth.</p><span class="tag deep">Owner</span></div>
+  </div>
+
+  <h3>Quarterly Industry Updates</h3>
+  <div class="module-grid">
+    <div class="module"><h4>Regulatory &amp; Legal Changes</h4><p>Condensed summary of all DOH, PDA, and legislative changes from the past quarter. What changed, what it means, what to do.</p><span class="tag deep">Quarterly</span></div>
+    <div class="module"><h4>Market Data &amp; Trends</h4><p>PA sales data, patient counts, product category trends, pricing shifts, and national comparisons that affect the local market.</p><span class="tag deep">Quarterly</span></div>
+    <div class="module"><h4>Research Roundup</h4><p>New clinical studies published through ACRC partnerships and national journals. Key findings summarized for non-scientists.</p><span class="tag deep">Quarterly</span></div>
+    <div class="module"><h4>Field Leader Feature</h4><p>Interview or podcast with an operator, researcher, or policymaker working in PA cannabis. Optional extended listening.</p><span class="tag deep">Quarterly</span></div>
+  </div>
+
+  <h2>How It Would Work</h2>
+
+  <div style="margin: 2rem 0;">
+    <div class="flow-step">
+      <div class="flow-num">1</div>
+      <div class="flow-text">
+        <h4>Content Built by Industry, for Industry</h4>
+        <p>Modules are authored collaboratively by practitioners, educators, and compliance experts — not by a single vendor or CR. Content is reviewed annually and updated when regulations change. Contributions are credited and version-controlled.</p>
+      </div>
+    </div>
+    <div class="flow-step">
+      <div class="flow-num">2</div>
+      <div class="flow-text">
+        <h4>Universities Integrate Into Existing Programs</h4>
+        <p>PA universities with cannabis programs (Jefferson, Wilkes, York, PIT, Del Val, Central Penn, etc.) assign LMS modules as pre-graduation requirements or supplementary material. Students earn both academic credit and industry-recognized certificates.</p>
+      </div>
+    </div>
+    <div class="flow-step">
+      <div class="flow-num">3</div>
+      <div class="flow-text">
+        <h4>Employers Adopt as Onboarding &amp; Ongoing Training</h4>
+        <p>Businesses assign tracks by role — new dispensary agents complete Core Compliance + Dispensary Ops before their first shift. Managers get Leadership tracks. Yearly recertification is automated. Employers can overlay custom modules (brand-specific SOPs) alongside the standardized curriculum.</p>
+      </div>
+    </div>
+    <div class="flow-step">
+      <div class="flow-num">4</div>
+      <div class="flow-text">
+        <h4>Workers Own Their Credentials</h4>
+        <p>Certificates are portable — a worker trained at one dispensary can prove their competency to any other employer. Yearly recertification keeps credentials current. Workers build a career-long learning record that grows with them.</p>
+      </div>
+    </div>
+    <div class="flow-step">
+      <div class="flow-num">5</div>
+      <div class="flow-text">
+        <h4>Managers &amp; Owners Get Leadership Infrastructure</h4>
+        <p>Quarterly updates keep leadership current without requiring hours of research. Optional deep dives (podcasts, case studies, full datasets) let motivated operators go further when they have time. The platform becomes the industry's shared brain for best practices.</p>
+      </div>
+    </div>
+  </div>
+
+  <h2>Platform Features</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Role-Based Dashboards</h3>
+      <p>Each user type sees a tailored view: assigned modules, progress, certificates, recertification dates, and recommended next steps.</p>
+    </div>
+    <div class="card">
+      <h3>Portable Certificates</h3>
+      <p>Verified digital credentials that workers carry between employers. Employers can instantly verify any candidate's completed training.</p>
+    </div>
+    <div class="card">
+      <h3>Automated Recertification</h3>
+      <p>Yearly or quarterly recertification tracks with automated reminders. Expired credentials are flagged to both the worker and their employer.</p>
+    </div>
+    <div class="card">
+      <h3>Custom Module Builder</h3>
+      <p>Employers can create and assign their own SOP, brand, or facility-specific modules alongside the standardized curriculum.</p>
+    </div>
+    <div class="card">
+      <h3>University Integration</h3>
+      <p>API-level integration with university LMS platforms (Canvas, Blackboard, etc.) or standalone cohort management for non-integrated programs.</p>
+    </div>
+    <div class="card">
+      <h3>Analytics &amp; Benchmarking</h3>
+      <p>Anonymized industry-wide data on completion rates, skill gaps, and certification density by region and role.</p>
+    </div>
+  </div>
+
+  <h2>What It Would Take to Build</h2>
+  <table>
+    <tr><th style="width: 200px;">Phase</th><th>What's Involved</th><th>Estimated Effort</th></tr>
+    <tr><td><strong>MVP</strong></td><td>Core modules (6&ndash;8), one role dashboard, certificate issuance, one pilot employer &amp; one pilot university</td><td>3&ndash;4 months (2&ndash;3 devs + content team)</td></tr>
+    <tr><td><strong>V1</strong></td><td>All five role dashboards, 20+ modules, custom module builder, analytics, recertification engine</td><td>6&ndash;9 months</td></tr>
+    <tr><td><strong>V2</strong></td><td>API integrations with university LMS platforms, employer SSO, mobile app, quarterly update pipeline</td><td>9&ndash;12 months</td></tr>
+    <tr><td><strong>V3+</strong></td><td>Marketplace for third-party content, skills-gap analysis AI, industry benchmarking public dashboard</td><td>12&ndash;18 months</td></tr>
+  </table>
+
+  <p style="margin-top: 1rem;"><strong>Tech stack (proposed):</strong> Modern web app (React/Next.js frontend, Node/Python backend, PostgreSQL, S3 for content). Open-source core with a sustainable business model (employer subscriptions fund free or low-cost access for workers and students).</p>
+
+  <h2>Why Vendor-Neutral Matters</h2>
+  <p>Every existing cannabis training platform in PA is tied to a specific CR or MSO. That means the training stops at the edge of that organization's business model. A vendor-neutral platform:</p>
+  <ul>
+    <li>Serves <strong>all</strong> dispensaries, not just one chain's</li>
+    <li>Works for <strong>hemp businesses</strong> and <strong>testing labs</strong> that aren't part of the medical program</li>
+    <li>Lets <strong>workers</strong> build credentials that transfer across employers</li>
+    <li>Gives <strong>universities</strong> a single platform to align with, instead of negotiating separately with each employer</li>
+    <li>Can incorporate <strong>all 10 business models</strong> from the <a href="business-models.html">Business Models page</a> — not just CR vertical integration</li>
+  </ul>
+
+  <div class="cta-section">
+    <h2>Want to Help Build This?</h2>
+    <p>This is a big idea that needs input from educators, employers, compliance experts, and developers. If you want to contribute content, pilot the platform, or help architect the system — the first step is conversation.</p>
+    <a href="get-involved.html" class="btn btn-primary">Get in Touch</a>
+  </div>
+
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+<div class="inner">
+  <div>
+    <h4>KeystoneCannabisHub</h4>
+    <p style="color: rgba(255,255,255,.5); font-size: .85rem;">Comprehensive resource for PA cannabis research, law, and education. Also the public face of a venture to build a vertically integrated greenhouse education, clone production, and social-impact employment operation in Bucks County, PA.</p>
+  </div>
+  <div>
+    <h4>Pages</h4>
+    <a href="https://techmore.github.io/KeystoneCannabisHub/">Home</a>
+    <a href="about.html">About &amp; Key Players</a>
+    <a href="laws.html">Law &amp; Regulation</a>
+    <a href="clinical-registrants/">Clinical Registrants</a>
+    <a href="universities.html">Universities</a>
+    <a href="education.html">Education &amp; Careers</a>
+    <a href="lms-portal.html">LMS Portal</a>
+    <a href="business-models.html">Business Models</a>
+    <a href="science.html">Plant Science</a>
+    <a href="social-impact.html">Social Impact</a>
+    <a href="get-involved.html">Get Involved</a>
+  </div>
+</div>
+<div class="copy">Built with public information. Not affiliated with any listed institution. Always verify official sources for current requirements. This is a project in development — details evolve.</div>
+</div>
+</footer>
+</body>
+</html>

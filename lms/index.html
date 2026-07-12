@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LMS — Training Modules — Keystone Cannabis Hub</title>
+<meta name="description" content="Free cannabis industry training modules for Pennsylvania workers. 11+ modules across core, operations, and advanced tracks with curated video resources.">
+<link rel="stylesheet" href="../css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+.track-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 1.25rem; margin: 1.5rem 0; }
+.module-card { background: var(--card); border-radius: var(--radius); padding: 1.5rem; box-shadow: var(--shadow); border: 1px solid rgba(0,0,0,.04); display: flex; flex-direction: column; }
+.module-card h3 { font-size: 1.1rem; margin-bottom: .3rem; color: var(--green-dark); }
+.module-card .meta { font-size: .8rem; color: var(--text-light); margin-bottom: .75rem; }
+.module-card p { font-size: .9rem; color: var(--text); margin-bottom: 1rem; flex: 1; }
+.module-card .skills { display: flex; gap: .4rem; flex-wrap: wrap; margin-bottom: 1rem; }
+.module-card .skills span { background: var(--gold-light); color: var(--green-dark); font-size: .72rem; font-weight: 600; padding: .15rem .5rem; border-radius: 99px; }
+.module-card .btn { align-self: flex-start; }
+.track-header { display: flex; align-items: center; gap: .75rem; margin: 2rem 0 1rem; padding: .75rem 1.25rem; border-radius: var(--radius); font-weight: 700; font-size: 1.1rem; }
+.track-header.core { background: #d4edda; color: #155724; }
+.track-header.ops { background: #cce5ff; color: #004085; }
+.track-header.advanced { background: #e2d5f3; color: #563d7c; }
+.skill-tree { background: var(--card); border-radius: var(--radius); padding: 1.5rem; margin: 1.5rem 0; box-shadow: var(--shadow); }
+.skill-tree .row { display: flex; align-items: center; gap: .5rem; margin-bottom: .6rem; }
+.skill-tree .row .label { width: 120px; font-weight: 600; font-size: .85rem; }
+.skill-tree .row .bar-wrap { flex: 1; height: 12px; background: #eee; border-radius: 99px; overflow: hidden; position: relative; }
+.skill-tree .row .bar-wrap .fill { height: 100%; border-radius: 99px; }
+.badge-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.badge-item { text-align: center; padding: 1rem; background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); }
+.badge-item .icon { font-size: 2rem; margin-bottom: .3rem; }
+.badge-item .name { font-weight: 600; font-size: .85rem; color: var(--green-dark); }
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header>
+<div class="container inner">
+  <a href="https://techmore.github.io/KeystoneCannabisHub/" class="logo">&#9883; Keystone<span>Cannabis</span>Hub</a>
+  <nav>
+    <a href="https://techmore.github.io/KeystoneCannabisHub/">Home</a>
+    <a href="../about.html">About</a>
+    <a href="../laws.html">Law</a>
+    <a href="../clinical-registrants/">CRs</a>
+    <a href="../universities.html">Universities</a>
+    <a href="../education.html">Education</a>
+    <a href="../lms-portal.html">LMS</a>
+    <a href="../job-placement.html">Jobs</a>
+    <a href="../business-models.html">Models</a>
+    <a href="../social-impact.html">Impact</a>
+    <a href="../science.html">Science</a>
+    <a href="../get-involved.html">Get Involved</a>
+  </nav>
+</div>
+</header>
+
+<main id="main">
+<div class="page-header">
+<div class="container">
+  <span class="subtitle" style="background: #d4edda; color: #155724;">LMS Portal &middot; Training Modules</span>
+  <h1>Training Modules</h1>
+  <p>Free, self-paced cannabis industry training modules for Pennsylvania workers. Each module includes curated video resources, skill dimensions, university program mappings, and job role connections.</p>
+</div>
+</div>
+
+<section>
+<div class="container prose">
+
+  <h2>Skill Tree</h2>
+  <p>Your overall progress across all skill dimensions. Each module advances specific skills. Track your growth and update your <a href="../job-placement.html">Talent Network profile</a> as you complete modules.</p>
+
+  <div class="skill-tree">
+    <div class="row">
+      <span class="label">PA Med Act</span>
+      <div class="bar-wrap"><div class="fill" style="width: 0%; background: #28a745;"></div></div>
+      <span style="font-size: .8rem; color: var(--text-light); width: 36px; text-align: right;">0/5</span>
+    </div>
+    <div class="row">
+      <span class="label">HIPAA</span>
+      <div class="bar-wrap"><div class="fill" style="width: 0%; background: #28a745;"></div></div>
+      <span style="font-size: .8rem; color: var(--text-light); width: 36px; text-align: right;">0/5</span>
+    </div>
+    <div class="row">
+      <span class="label">Cultivation</span>
+      <div class="bar-wrap"><div class="fill" style="width: 0%; background: #17a2b8;"></div></div>
+      <span style="font-size: .8rem; color: var(--text-light); width: 36px; text-align: right;">0/5</span>
+    </div>
+    <div class="row">
+      <span class="label">Dispensary Ops</span>
+      <div class="bar-wrap"><div class="fill" style="width: 0%; background: #17a2b8;"></div></div>
+      <span style="font-size: .8rem; color: var(--text-light); width: 36px; text-align: right;">0/5</span>
+    </div>
+    <div class="row">
+      <span class="label">Extraction</span>
+      <div class="bar-wrap"><div class="fill" style="width: 0%; background: #6f42c1;"></div></div>
+      <span style="font-size: .8rem; color: var(--text-light); width: 36px; text-align: right;">0/5</span>
+    </div>
+    <div class="row">
+      <span class="label">Analytics</span>
+      <div class="bar-wrap"><div class="fill" style="width: 0%; background: #6f42c1;"></div></div>
+      <span style="font-size: .8rem; color: var(--text-light); width: 36px; text-align: right;">0/5</span>
+    </div>
+    <div class="row">
+      <span class="label">Business</span>
+      <div class="bar-wrap"><div class="fill" style="width: 0%; background: #fd7e14;"></div></div>
+      <span style="font-size: .8rem; color: var(--text-light); width: 36px; text-align: right;">0/5</span>
+    </div>
+    <div class="row">
+      <span class="label">Supply Chain</span>
+      <div class="bar-wrap"><div class="fill" style="width: 0%; background: #17a2b8;"></div></div>
+      <span style="font-size: .8rem; color: var(--text-light); width: 36px; text-align: right;">0/5</span>
+    </div>
+    <div class="row">
+      <span class="label">Safety</span>
+      <div class="bar-wrap"><div class="fill" style="width: 0%; background: #dc3545;"></div></div>
+      <span style="font-size: .8rem; color: var(--text-light); width: 36px; text-align: right;">0/5</span>
+    </div>
+    <div class="row">
+      <span class="label">Ethics</span>
+      <div class="bar-wrap"><div class="fill" style="width: 0%; background: #28a745;"></div></div>
+      <span style="font-size: .8rem; color: var(--text-light); width: 36px; text-align: right;">0/5</span>
+    </div>
+    <div class="row">
+      <span class="label">Regulatory</span>
+      <div class="bar-wrap"><div class="fill" style="width: 0%; background: #6f42c1;"></div></div>
+      <span style="font-size: .8rem; color: var(--text-light); width: 36px; text-align: right;">0/5</span>
+    </div>
+    <p style="font-size: .82rem; color: var(--text-light); margin-top: .75rem;">Start any module below to begin advancing these skill levels. Update your <a href="../job-placement.html">Talent Network profile</a> to reflect your current levels for employer matching.</p>
+  </div>
+
+  <h2>Badges</h2>
+  <p>Earn badges as you complete modules and advance skills. Badges are visual markers of your growing expertise in the PA cannabis industry.</p>
+  <div class="badge-grid">
+    <div class="badge-item"><div class="icon">&#128218;</div><div class="name">Core Trainee</div><span style="font-size: .7rem; color: var(--text-light);">Complete 2 core modules</span></div>
+    <div class="badge-item"><div class="icon">&#128200;</div><div class="name">Skill Builder</div><span style="font-size: .7rem; color: var(--text-light);">Reach Level 2 in any skill</span></div>
+    <div class="badge-item"><div class="icon">&#127891;</div><div class="name">Track Graduate</div><span style="font-size: .7rem; color: var(--text-light);">Complete all modules in 1 track</span></div>
+    <div class="badge-item"><div class="icon">&#127942;</div><div class="name">All-Rounder</div><span style="font-size: .7rem; color: var(--text-light);">Complete all 11 modules</span></div>
+    <div class="badge-item"><div class="icon">&#128736;</div><div class="name">Master Grower</div><span style="font-size: .7rem; color: var(--text-light);">Level 4+ in Cultivation</span></div>
+    <div class="badge-item"><div class="icon">&#128300;</div><div class="name">Lab Expert</div><span style="font-size: .7rem; color: var(--text-light);">Level 4+ in Analytics</span></div>
+    <div class="badge-item"><div class="icon">&#9878;</div><div class="name">Compliance Pro</div><span style="font-size: .7rem; color: var(--text-light);">Level 4+ in Regulatory</span></div>
+  </div>
+
+  <h2>Modules by Track</h2>
+
+  <div class="track-header core">&#9679; Core Requirements &mdash; All Roles</div>
+  <p style="font-size: .9rem; color: var(--text-light);">Start here. These modules cover the legal, safety, and ethical foundations every PA cannabis worker needs.</p>
+  <div class="track-grid">
+    <div class="module-card">
+      <h3>PA Cannabis Law &amp; Compliance</h3>
+      <div class="meta">&#9201; ~2 hrs &middot; COA &middot; HIPAA &middot; METRC</div>
+      <p>Medical Marijuana Act, HIPAA, seed-to-sale tracking, COA interpretation, DOH inspections.</p>
+      <div class="skills"><span>PA Med Act</span><span>HIPAA</span><span>COA</span></div>
+      <a href="module-compliance.html" class="btn btn-primary">Start Module</a>
+    </div>
+    <div class="module-card">
+      <h3>Workplace Safety &amp; Security</h3>
+      <div class="meta">&#9201; ~1.5 hrs &middot; OSHA &middot; Cash Handling &middot; Emergency</div>
+      <p>OSHA compliance, security protocols, cash management, emergency action plans.</p>
+      <div class="skills"><span>OSHA</span><span>Security</span><span>Emergency</span></div>
+      <a href="module-safety.html" class="btn btn-primary">Start Module</a>
+    </div>
+    <div class="module-card">
+      <h3>Ethics &amp; Professionalism</h3>
+      <div class="meta">&#9201; ~1.5 hrs &middot; DEI &middot; Privacy &middot; Conduct</div>
+      <p>Professional conduct, patient privacy, DEI, conflict resolution, whistleblower protections.</p>
+      <div class="skills"><span>Ethics</span><span>DEI</span><span>Communication</span></div>
+      <a href="module-ethics.html" class="btn btn-primary">Start Module</a>
+    </div>
+  </div>
+
+  <div class="track-header ops">&#9679; Operations Track &mdash; Dispensary &amp; Facility Roles</div>
+  <p style="font-size: .9rem; color: var(--text-light);">For patient-facing and facility operations roles. Build dispensary, cultivation, and supply chain skills.</p>
+  <div class="track-grid">
+    <div class="module-card">
+      <h3>Dispensary Operations &amp; Patient Care</h3>
+      <div class="meta">&#9201; ~2.5 hrs &middot; Intake &middot; Product &middot; Inventory</div>
+      <p>Patient intake, product knowledge, dosing, consultation, inventory reconciliation.</p>
+      <div class="skills"><span>Product Knowledge</span><span>Consultation</span><span>Inventory</span></div>
+      <a href="module-dispensary.html" class="btn btn-primary">Start Module</a>
+    </div>
+    <div class="module-card">
+      <h3>Budtending &amp; Patient Consultation</h3>
+      <div class="meta">&#9201; ~2 hrs &middot; Cannabinoids &middot; Terpenes &middot; Dosing</div>
+      <p>Cannabinoid science, terpenes, consumption methods, dosing principles, consultation scripts.</p>
+      <div class="skills"><span>Cannabinoids</span><span>Terpenes</span><span>Dosing</span></div>
+      <a href="module-budtending.html" class="btn btn-primary">Start Module</a>
+    </div>
+    <div class="module-card">
+      <h3>Cannabis Botany &amp; Cultivation</h3>
+      <div class="meta">&#9201; ~3 hrs &middot; Propagation &middot; IPM &middot; Harvest</div>
+      <p>Plant biology, photoperiods, propagation, nutrients, pheno hunting, harvest and cure.</p>
+      <div class="skills"><span>Plant Biology</span><span>Nutrients</span><span>IPM</span></div>
+      <a href="module-botany.html" class="btn btn-primary">Start Module</a>
+    </div>
+    <div class="module-card">
+      <h3>Supply Chain &amp; Logistics</h3>
+      <div class="meta">&#9201; ~2 hrs &middot; Transport &middot; Warehousing &middot; METRC</div>
+      <p>Transportation rules, warehousing, inventory reconciliation, procurement, distribution models.</p>
+      <div class="skills"><span>Logistics</span><span>Inventory</span><span>METRC</span></div>
+      <a href="module-supplychain.html" class="btn btn-primary">Start Module</a>
+    </div>
+  </div>
+
+  <div class="track-header ops">&#9679; Processing Track &mdash; Lab &amp; Manufacturing Roles</div>
+  <p style="font-size: .9rem; color: var(--text-light);">For extraction technicians, lab analysts, and manufacturing staff. Build processing and quality control skills.</p>
+  <div class="track-grid">
+    <div class="module-card">
+      <h3>Extraction &amp; Processing</h3>
+      <div class="meta">&#9201; ~3 hrs &middot; BHO &middot; CO2 &middot; Ethanol &middot; Rosin</div>
+      <p>Solvent/solventless extraction, distillation, winterization, formulation, lab safety.</p>
+      <div class="skills"><span>Extraction</span><span>Lab Safety</span><span>Formulation</span></div>
+      <a href="module-processing.html" class="btn btn-primary">Start Module</a>
+    </div>
+    <div class="module-card">
+      <h3>Analytics &amp; Lab Testing</h3>
+      <div class="meta">&#9201; ~2.5 hrs &middot; HPLC &middot; GC-MS &middot; Microbiology</div>
+      <p>HPLC, GC-MS, microbial screening, residual solvents, COA interpretation, QA/QC.</p>
+      <div class="skills"><span>HPLC</span><span>GC-MS</span><span>QA/QC</span></div>
+      <a href="module-analytics.html" class="btn btn-primary">Start Module</a>
+    </div>
+  </div>
+
+  <div class="track-header advanced">&#9679; Business &amp; Advanced Tracks</div>
+  <p style="font-size: .9rem; color: var(--text-light);">For entrepreneurs, executives, and specialists seeking advanced knowledge.</p>
+  <div class="track-grid">
+    <div class="module-card">
+      <h3>Business &amp; Entrepreneurship</h3>
+      <div class="meta">&#9201; ~3 hrs &middot; Licensing &middot; Capital &middot; Models</div>
+      <p>License types, business plans, capital raising, operating models, social equity programs.</p>
+      <div class="skills"><span>Business Planning</span><span>Capital</span><span>Licensing</span></div>
+      <a href="module-business.html" class="btn btn-primary">Start Module</a>
+    </div>
+    <div class="module-card">
+      <h3>Advanced Cultivation</h3>
+      <div class="meta">&#9201; ~3 hrs &middot; Facility Design &middot; HVAC &middot; Lighting</div>
+      <p>Commercial facility design, environmental control, lighting science, pheno hunting programs.</p>
+      <div class="skills"><span>Facility Design</span><span>HVAC</span><span>Pheno Hunting</span></div>
+      <a href="module-advanced-cultivation.html" class="btn btn-primary">Start Module</a>
+    </div>
+    <div class="module-card">
+      <h3>Advanced Extraction &amp; Product Dev</h3>
+      <div class="meta">&#9201; ~3 hrs &middot; Nano &middot; QbD &middot; Scale-Up</div>
+      <p>Process optimization, nanoemulsions, QbD, scale-up engineering, stability testing.</p>
+      <div class="skills"><span>Formulation</span><span>Scale-Up</span><span>QbD</span></div>
+      <a href="module-advanced-extraction.html" class="btn btn-primary">Start Module</a>
+    </div>
+    <div class="module-card">
+      <h3>Regulatory Affairs &amp; Policy</h3>
+      <div class="meta">&#9201; ~2.5 hrs &middot; Compliance &middot; Audit &middot; Policy</div>
+      <p>PA regulatory framework, compliance programs, DOH audits, policy research, federal conflicts.</p>
+      <div class="skills"><span>Compliance</span><span>Audit</span><span>Policy</span></div>
+      <a href="module-regulatory.html" class="btn btn-primary">Start Module</a>
+    </div>
+  </div>
+
+  <h2>University-to-Salary Mapping</h2>
+  <p>Each module maps to PA university programs and real job roles. Here's a summary of what completing these tracks can lead to:</p>
+  <div style="overflow-x: auto;">
+    <table>
+      <tr><th>Track</th><th>Related Degrees</th><th>Entry Role</th><th>Mid-Career Role</th><th>Top Role</th></tr>
+      <tr>
+        <td><strong>Compliance</strong></td>
+        <td>Jefferson (MS), Wilkes (BS)</td>
+        <td>Dispensary Agent<br><span style="font-size: .8rem; color: var(--text-light);">$15&ndash;$20/hr</span></td>
+        <td>Compliance Officer<br><span style="font-size: .8rem; color: var(--text-light);">$55K&ndash;$85K/yr</span></td>
+        <td>Regulatory Affairs Director<br><span style="font-size: .8rem; color: var(--text-light);">$90K&ndash;$140K/yr</span></td>
+      </tr>
+      <tr>
+        <td><strong>Cultivation</strong></td>
+        <td>Del Val (BS), Jefferson (MS)</td>
+        <td>Cultivation Tech<br><span style="font-size: .8rem; color: var(--text-light);">$15&ndash;$20/hr</span></td>
+        <td>Master Grower<br><span style="font-size: .8rem; color: var(--text-light);">$65K&ndash;$100K/yr</span></td>
+        <td>Director of Cultivation<br><span style="font-size: .8rem; color: var(--text-light);">$90K&ndash;$140K/yr</span></td>
+      </tr>
+      <tr>
+        <td><strong>Processing</strong></td>
+        <td>York (BS), Wilkes (BS)</td>
+        <td>Extraction Tech<br><span style="font-size: .8rem; color: var(--text-light);">$18&ndash;$28/hr</span></td>
+        <td>Lab Manager<br><span style="font-size: .8rem; color: var(--text-light);">$65K&ndash;$95K/yr</span></td>
+        <td>VP of Product Development<br><span style="font-size: .8rem; color: var(--text-light);">$120K&ndash;$180K/yr</span></td>
+      </tr>
+      <tr>
+        <td><strong>Dispensary</strong></td>
+        <td>Central Penn (BA), Lackawanna (Cert)</td>
+        <td>Patient Care Specialist<br><span style="font-size: .8rem; color: var(--text-light);">$15&ndash;$20/hr</span></td>
+        <td>Store Manager<br><span style="font-size: .8rem; color: var(--text-light);">$55K&ndash;$75K/yr</span></td>
+        <td>VP of Retail Operations<br><span style="font-size: .8rem; color: var(--text-light);">$100K&ndash;$150K/yr</span></td>
+      </tr>
+      <tr>
+        <td><strong>Business</strong></td>
+        <td>Central Penn (BA), Jefferson (MS)</td>
+        <td>Business Development<br><span style="font-size: .8rem; color: var(--text-light);">$50K&ndash;$70K/yr</span></td>
+        <td>Operations Director<br><span style="font-size: .8rem; color: var(--text-light);">$80K&ndash;$130K/yr</span></td>
+        <td>CEO / Founder<br><span style="font-size: .8rem; color: var(--text-light);">Variable</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="cta-section">
+    <h2>Track Your Progress</h2>
+    <p>These modules are designed to work with the <a href="../job-placement.html">PA Cannabis Talent Network</a>. As you complete modules, update your skill profile to show employers your current levels. No pass/fail &mdash; just a clearer picture of your capabilities.</p>
+    <a href="../job-placement.html" class="btn btn-primary">Go to Talent Network</a>
+    <a href="../lms-portal.html" class="btn btn-secondary" style="margin-left: .5rem;">Back to LMS Overview</a>
+  </div>
+
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+<div class="inner">
+  <div>
+    <h4>KeystoneCannabisHub</h4>
+    <p style="color: rgba(255,255,255,.5); font-size: .85rem;">Comprehensive resource for PA cannabis research, law, and education.</p>
+  </div>
+  <div>
+    <h4>Pages</h4>
+    <a href="../">Home</a>
+    <a href="../about.html">About</a>
+    <a href="../laws.html">Law</a>
+    <a href="../clinical-registrants/">Clinical Registrants</a>
+    <a href="../universities.html">Universities</a>
+    <a href="../education.html">Education</a>
+    <a href="../lms-portal.html">LMS Portal</a>
+    <a href="../job-placement.html">Job Placement</a>
+    <a href="../business-models.html">Business Models</a>
+    <a href="../science.html">Science</a>
+    <a href="../social-impact.html">Social Impact</a>
+    <a href="../get-involved.html">Get Involved</a>
+  </div>
+</div>
+<div class="copy">Built with public information. Not affiliated with any listed institution.</div>
+</div>
+</footer>
+</body>
+</html>

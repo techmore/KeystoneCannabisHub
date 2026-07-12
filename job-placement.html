@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PA Cannabis Job Placement — Blind Talent Matching — Keystone Cannabis Hub</title>
+<meta name="description" content="A blind job placement platform for Pennsylvania's cannabis industry — connecting university training, skills assessment, and company success criteria to make bias-free talent recommendations.">
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+.step { display: flex; gap: 1.25rem; align-items: flex-start; margin-bottom: 2rem; padding: 1.5rem; background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid rgba(0,0,0,.04); }
+.step-num { flex-shrink: 0; width: 44px; height: 44px; background: var(--green); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.1rem; }
+.step-body h3 { font-size: 1.05rem; font-weight: 600; color: var(--green-dark); margin-bottom: .3rem; }
+.step-body p { font-size: .88rem; color: var(--text-light); line-height: 1.6; margin-bottom: .3rem; }
+.track-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1.25rem; margin: 1.5rem 0; }
+.track-card { background: var(--card); border-radius: var(--radius); padding: 1.5rem; box-shadow: var(--shadow); border: 1px solid rgba(0,0,0,.04); border-left: 4px solid var(--green); }
+.track-card.sales { border-left-color: #e76f51; }
+.track-card.ops { border-left-color: var(--green-light); }
+.track-card.cult { border-left-color: #6c63ff; }
+.track-card.process { border-left-color: #e8a838; }
+.track-card.finance { border-left-color: #2d6a4f; }
+.track-card.tech { border-left-color: #457b9d; }
+.track-card.lead { border-left-color: var(--gold); }
+.track-card h3 { font-size: 1.05rem; font-weight: 600; color: var(--green-dark); margin-bottom: .5rem; }
+.track-card p { font-size: .85rem; color: var(--text-light); line-height: 1.6; }
+.track-card ul { margin: .5rem 0 0 1.25rem; font-size: .83rem; color: var(--text-light); }
+.track-card ul li { margin-bottom: .25rem; }
+.eco-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.eco-card { background: var(--cream); border-radius: 8px; padding: 1.25rem; text-align: center; }
+.eco-card .num { font-size: 1.6rem; font-weight: 800; color: var(--green); }
+.eco-card .label { font-size: .8rem; color: var(--text-light); margin-top: .2rem; }
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header>
+<div class="container inner">
+  <a href="https://techmore.github.io/KeystoneCannabisHub/" class="logo">&#9883; Keystone<span>Cannabis</span>Hub</a>
+  <nav>
+    <a href="https://techmore.github.io/KeystoneCannabisHub/">Home</a>
+    <a href="about.html">About</a>
+    <a href="laws.html">Law</a>
+    <a href="clinical-registrants/">CRs</a>
+    <a href="universities.html">Universities</a>
+    <a href="education.html">Education</a>
+    <a href="lms-portal.html">LMS</a>
+    <a href="job-placement.html" class="active">Jobs</a>
+    <a href="business-models.html">Models</a>
+    <a href="social-impact.html">Impact</a>
+    <a href="science.html">Science</a>
+    <a href="get-involved.html">Get Involved</a>
+  </nav>
+</div>
+</header>
+
+<main id="main">
+<div class="page-header">
+<div class="container">
+  <span class="subtitle">Proposed Platform</span>
+  <h1>PA Cannabis Job Placement</h1>
+  <p>A blind talent matching platform that connects university training, skills assessment, and company success metrics to make unbiased job recommendations across Pennsylvania's cannabis industry.</p>
+</div>
+</div>
+
+<section>
+<div class="container prose">
+
+  <div class="info-box">
+    <h4>What This Is</h4>
+    <p>This is a <strong>concept and blueprint</strong> for a job placement platform that sits alongside the <a href="lms-portal.html">LMS Portal</a>. Where the LMS certifies that someone has completed training, this platform validates that they can <em>actually do the work</em> — and matches them to employers who need exactly what they offer, without the bias that traditionally filters out good candidates. It is not built yet.</p>
+  </div>
+
+  <h2>The Problem</h2>
+  <p>Right now, getting hired in PA cannabis comes down to who you know, where you went to school, and whether your resume happens to match a job description. Employers waste time interviewing candidates who look good on paper but can't perform. Good workers get passed over because they lack the right brand name on their resume or the right connection. Everyone loses.</p>
+  <ul>
+    <li><strong>Universities</strong> produce graduates but can't prove they're job-ready beyond a transcript</li>
+    <li><strong>Workers</strong> have training certificates but no way to demonstrate real skill level</li>
+    <li><strong>Employers</strong> spend weeks interviewing to find what a skills test would reveal in an hour</li>
+    <li><strong>The industry</strong> perpetuates hiring bias — name, school, gender, and network matter more than ability</li>
+  </ul>
+
+  <h2>The Solution: Blind Matching in 4 Steps</h2>
+
+  <div class="step">
+    <div class="step-num">1</div>
+    <div class="step-body">
+      <h3>Understand the Training</h3>
+      <p>We ingest curriculum data from every PA university cannabis program (Jefferson, Wilkes, York, PIT, Del Val, Central Penn, HACC, etc.) and map it to industry-standard competencies. When a graduate from any program enters the platform, we already know what they've studied — not by degree title, but by actual course content.</p>
+      <p style="font-size: .8rem; color: var(--text-light);">See <a href="universities.html">full university directory</a> for program details.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">2</div>
+    <div class="step-body">
+      <h3>Test the Individual</h3>
+      <p>Candidates take role-specific skills assessments built by industry practitioners. Tests measure real competency: compliance scenarios, product knowledge, customer interactions, inventory math, system operations. Results are scored against anonymized benchmarks — not against a curve. Testing is blind to name, school, age, gender, and background.</p>
+      <p style="font-size: .85rem; color: var(--text-light);">Assessments are aligned with the <a href="lms-portal.html">LMS Portal's</a> training modules. A candidate who completes the LMS Compliance track plus passes the skills assessment holds a verified credential that means something to any employer.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">3</div>
+    <div class="step-body">
+      <h3>Measure Company Success Criteria</h3>
+      <p>Employers define what success looks like for each role — not as a wishlist, but as measurable criteria: proficiency level in specific systems, communication style preferences, experience with certain product types, shift availability, autonomy level. The platform learns from placement outcomes — which criteria actually predict retention and performance — and refines matches over time.</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-num">4</div>
+    <div class="step-body">
+      <h3>Blind Recommendation</h3>
+      <p>Employers see candidates with all identifying information removed — no name, no school name, no age, no gender, no ethnicity, no photo. Only what matters: skill scores, competency certifications, experience level, availability, and a blind compatibility score against the company's success criteria. The employer shortlists based on fit alone. Unblinding happens only at the interview stage.</p>
+    </div>
+  </div>
+
+  <hr style="margin: 2.5rem 0; border: 0; border-top: 2px solid #eee;">
+
+  <h2>Role-Specific Tracks</h2>
+  <p>Every track aligns with both the <a href="lms-portal.html">LMS training modules</a> and the skills assessment. A candidate progresses through: LMS training &rarr; skills assessment &rarr; blind placement. Each track includes specific competencies tested, certifications earned, and the types of roles it maps to.</p>
+
+  <div class="track-grid">
+    <div class="track-card sales">
+      <h3>&#127969; Front-End Sales &amp; Patient Care</h3>
+      <p>For dispensary agents, patient consultants, and retail leads. The public face of any cannabis business.</p>
+      <ul>
+        <li>Patient consultation &amp; needs assessment</li>
+        <li>Product knowledge across all categories (flower, vapes, concentrates, edibles, topicals, tinctures)</li>
+        <li>POS system operation &amp; transaction compliance</li>
+        <li>Customer service scenarios &amp; de-escalation</li>
+        <li>HIPAA compliance &amp; patient privacy in practice</li>
+        <li>Recommendation-driven selling (not just order-taking)</li>
+      </ul>
+    </div>
+    <div class="track-card ops">
+      <h3>&#128230; Back-End Fulfillment &amp; Inventory</h3>
+      <p>For inventory specialists, fulfillment leads, and operations coordinators. The engine room of every dispensary and processor.</p>
+      <ul>
+        <li>Inventory receiving, verification &amp; reconciliation</li>
+        <li>Seed-to-sale system data entry &amp; compliance</li>
+        <li>Waste documentation &amp; destruction protocols</li>
+        <li>Product staging, rotation &amp; expiration management</li>
+        <li>Physical inventory counts &amp; discrepancy investigation</li>
+        <li>Supply chain coordination with cultivation &amp; processing</li>
+      </ul>
+    </div>
+    <div class="track-card cult">
+      <h3>&#127793; Cultivation &amp; Production</h3>
+      <p>For grow technicians, cultivation leads, and facility managers. The people who produce the product.</p>
+      <ul>
+        <li>Plant life cycle management (clone to harvest)</li>
+        <li>Nutrient management &amp; irrigation systems</li>
+        <li>Integrated pest management (IPM) protocols</li>
+        <li>Environmental monitoring &amp; HVAC control</li>
+        <li>Harvest, trim, cure &amp; packaging</li>
+        <li>Data collection for breeding &amp; phenotype tracking</li>
+      </ul>
+    </div>
+    <div class="track-card process">
+      <h3>&#9881; Processing &amp; Extraction</h3>
+      <p>For extraction technicians, processing leads, and lab assistants. The people who transform plant into product.</p>
+      <ul>
+        <li>Extraction equipment operation (CO2, ethanol, hydrocarbon)</li>
+        <li>Solvent safety, handling &amp; storage protocols</li>
+        <li>Post-processing: winterization, distillation, crystallization</li>
+        <li>Quality control sampling &amp; in-process testing</li>
+        <li>GMP sanitation &amp; contamination prevention</li>
+        <li>Batch tracking &amp; lot reconciliation</li>
+      </ul>
+    </div>
+    <div class="track-card finance">
+      <h3>&#128202; Accounting, Finance &amp; Administration</h3>
+      <p>For accountants, bookkeepers, and admin staff. The backbone that keeps cannabis businesses compliant with tax law and payroll.</p>
+      <ul>
+        <li>IRC 280E implications for cannabis businesses</li>
+        <li>Inventory valuation &amp; cost of goods sold (COGS) tracking</li>
+        <li>Cash management, deposit procedures &amp; reconciliation</li>
+        <li>Payroll processing with cannabis-specific considerations</li>
+        <li>Sales tax &amp; excise tax reporting</li>
+        <li>Compliance reporting for DOH &amp; PDA audits</li>
+      </ul>
+    </div>
+    <div class="track-card tech">
+      <h3>&#128421; Technology, Systems &amp; Data</h3>
+      <p>For system administrators, data analysts, and tech support. The people who keep the digital infrastructure running.</p>
+      <ul>
+        <li>METRC / seed-to-sale platform administration</li>
+        <li>POS system configuration &amp; troubleshooting</li>
+        <li>Inventory management software operation</li>
+        <li>Data analysis &amp; compliance reporting</li>
+        <li>Security system monitoring &amp; access control</li>
+        <li>Integration between platforms (POS + METRC + accounting)</li>
+      </ul>
+    </div>
+    <div class="track-card lead">
+      <h3>&#128200; Management &amp; Leadership</h3>
+      <p>For department heads, store managers, and aspiring leaders. The people who build and run teams.</p>
+      <ul>
+        <li>Team management, scheduling &amp; performance reviews</li>
+        <li>Regulatory compliance program management</li>
+        <li>Financial planning, P&amp;L analysis &amp; budgeting</li>
+        <li>Cannabis-specific HR, hiring &amp; employee policies</li>
+        <li>Strategic planning &amp; operations scaling</li>
+        <li>Social equity program design &amp; inclusive hiring</li>
+      </ul>
+    </div>
+    <div class="track-card" style="border-left-color: #6f42c1;">
+      <h3>&#127758; Compliance &amp; Regulatory</h3>
+      <p>For compliance officers, auditors, and quality assurance staff. The people who keep the license.</p>
+      <ul>
+        <li>DOH inspection preparation &amp; response</li>
+        <li>Recordkeeping &amp; documentation management</li>
+        <li>Standard operating procedure (SOP) writing &amp; maintenance</li>
+        <li>Product recall &amp; adverse event reporting protocols</li>
+        <li>Employee training program management</li>
+        <li>Third-party lab audit &amp; COA verification</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>How the Matching Works</h2>
+
+  <p style="margin-top: 1.5rem;"><strong>For candidates:</strong></p>
+  <ol>
+    <li>Complete LMS training modules for your target track</li>
+    <li>Take the skills assessment (online, proctored, ~1&ndash;2 hours)</li>
+    <li>Receive a competency profile with scores across each skill dimension</li>
+    <li>Set your preferences: location, schedule, company size, culture factors</li>
+    <li>Get notified when an employer is looking for your profile</li>
+    <li>Employer sees your blind profile — if they shortlist, you're unblinded and connected</li>
+  </ol>
+
+  <p style="margin-top: 1.5rem;"><strong>For employers:</strong></p>
+  <ol>
+    <li>Define the role: required skill levels, preferred experience, cultural indicators, schedule needs</li>
+    <li>Set success criteria — the system learns what predicts good hires for your specific operation</li>
+    <li>Review blind candidate profiles — names and schools hidden, only scores and fit data shown</li>
+    <li>Shortlist candidates for interview (unblinding happens here)</li>
+    <li>After hire, provide outcome data: did the candidate perform as predicted?</li>
+    <li>The system improves its matching algorithm based on real outcomes</li>
+  </ol>
+
+  <p style="margin-top: 1.5rem;"><strong>For universities:</strong></p>
+  <ol>
+    <li>Integrate curriculum data so the platform understands what your program covers</li>
+    <li>Receive anonymized reports on graduate performance across skill dimensions</li>
+    <li>Identify gaps between your curriculum and industry needs</li>
+    <li>Adjust program content based on real employer feedback</li>
+    <li>Track placement rates and starting positions of your graduates</li>
+  </ol>
+
+  <hr style="margin: 2.5rem 0; border: 0; border-top: 2px solid #eee;">
+
+  <h2>The Full Ecosystem</h2>
+  <p>These two platforms work together — the <strong>LMS Portal</strong> provides the standardized training backbone, and the <strong>Job Placement Platform</strong> validates and matches. Together they form a complete talent infrastructure for PA cannabis.</p>
+
+  <div class="eco-grid">
+    <div class="eco-card"><div class="num">&#127891;</div><div class="label">University Programs<br>provide curriculum</div></div>
+    <div class="eco-card"><div class="num">&#128218;</div><div class="label">LMS Portal<br>standardizes training</div></div>
+    <div class="eco-card"><div class="num">&#128203;</div><div class="label">Skills Assessment<br>validates competency</div></div>
+    <div class="eco-card"><div class="num">&#128269;</div><div class="label">Blind Matching<br>removes bias</div></div>
+    <div class="eco-card"><div class="num">&#127970;</div><div class="label">Employers<br>hire by fit alone</div></div>
+    <div class="eco-card"><div class="num">&#128200;</div><div class="label">Outcome Data<br>improves everything</div></div>
+  </div>
+
+  <div class="cta-section">
+    <h2>Want to Help Build the Talent Pipeline?</h2>
+    <p>Universities, employers, and developers all have a role in making this work. If you want to shape the assessment standards, pilot the matching system, or help build the platform — reach out.</p>
+    <a href="get-involved.html" class="btn btn-primary">Get in Touch</a>
+  </div>
+
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+<div class="inner">
+  <div>
+    <h4>KeystoneCannabisHub</h4>
+    <p style="color: rgba(255,255,255,.5); font-size: .85rem;">Comprehensive resource for PA cannabis research, law, and education. Also the public face of a venture to build a vertically integrated greenhouse education, clone production, and social-impact employment operation in Bucks County, PA.</p>
+  </div>
+  <div>
+    <h4>Pages</h4>
+    <a href="https://techmore.github.io/KeystoneCannabisHub/">Home</a>
+    <a href="about.html">About &amp; Key Players</a>
+    <a href="laws.html">Law &amp; Regulation</a>
+    <a href="clinical-registrants/">Clinical Registrants</a>
+    <a href="universities.html">Universities</a>
+    <a href="education.html">Education &amp; Careers</a>
+    <a href="lms-portal.html">LMS Portal</a>
+    <a href="job-placement.html">Job Placement</a>
+    <a href="business-models.html">Business Models</a>
+    <a href="science.html">Plant Science</a>
+    <a href="social-impact.html">Social Impact</a>
+    <a href="get-involved.html">Get Involved</a>
+  </div>
+</div>
+<div class="copy">Built with public information. Not affiliated with any listed institution. Always verify official sources for current requirements. This is a project in development — details evolve.</div>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PA Cannabis Business Models — Deep-Dive Library — Keystone Cannabis Hub</title>
+<meta name="description" content="Comprehensive deep-dive library of every real cannabis and hemp business model in Pennsylvania. Filter by capital, goal, risk, and timeline to find your entry point.">
+<link rel="stylesheet" href="../css/style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+.model-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 1.25rem; margin: 1.5rem 0; }
+.model-card { background: var(--card); border-radius: var(--radius); padding: 1.5rem; box-shadow: var(--shadow); border: 1px solid rgba(0,0,0,.04); display: flex; flex-direction: column; }
+.model-card h3 { font-size: 1.1rem; margin-bottom: .25rem; color: var(--green-dark); }
+.model-card .meta { font-size: .8rem; color: var(--text-light); margin-bottom: .75rem; }
+.model-card .tags { display: flex; gap: .35rem; flex-wrap: wrap; margin-bottom: .75rem; }
+.model-card .tags span { font-size: .7rem; font-weight: 600; padding: .15rem .5rem; border-radius: 99px; }
+.model-card p { font-size: .88rem; color: var(--text); margin-bottom: .75rem; flex: 1; }
+.model-card .stats { display: grid; grid-template-columns: 1fr 1fr; gap: .4rem; margin-bottom: 1rem; font-size: .82rem; }
+.model-card .stats .stat { padding: .3rem .5rem; background: var(--bg); border-radius: 6px; }
+.model-card .stats .stat strong { display: block; font-size: .75rem; color: var(--text-light); font-weight: 500; }
+.model-card .btn { align-self: flex-start; }
+.filters { display: flex; gap: .75rem; flex-wrap: wrap; margin: 1rem 0 1.5rem; padding: 1rem; background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow); }
+.filter-group { display: flex; flex-direction: column; gap: .25rem; }
+.filter-group label { font-size: .75rem; font-weight: 600; color: var(--text-light); text-transform: uppercase; letter-spacing: .05em; }
+.filter-group select { padding: .35rem .5rem; border: 1px solid #ddd; border-radius: 6px; font-size: .85rem; font-family: var(--font); background: #fff; }
+.compare-row { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: .75rem; margin: 1.5rem 0; }
+.compare-card { background: var(--card); border-radius: var(--radius); padding: 1rem; text-align: center; box-shadow: var(--shadow); }
+.compare-card .val { font-size: 1.4rem; font-weight: 700; color: var(--green-dark); }
+.compare-card .lbl { font-size: .75rem; color: var(--text-light); }
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header>
+<div class="container inner">
+  <a href="https://techmore.github.io/KeystoneCannabisHub/" class="logo">&#9883; Keystone<span>Cannabis</span>Hub</a>
+  <nav>
+    <a href="https://techmore.github.io/KeystoneCannabisHub/">Home</a>
+    <a href="../about.html">About</a>
+    <a href="../laws.html">Law</a>
+    <a href="../clinical-registrants/">CRs</a>
+    <a href="../universities.html">Universities</a>
+    <a href="../education.html">Education</a>
+    <a href="../lms-portal.html">LMS</a>
+    <a href="../job-placement.html">Jobs</a>
+    <a href="../business-models.html" class="active">Models</a>
+    <a href="../social-impact.html">Impact</a>
+    <a href="../science.html">Science</a>
+    <a href="../get-involved.html">Get Involved</a>
+  </nav>
+</div>
+</header>
+
+<main id="main">
+<div class="page-header">
+<div class="container">
+  <span class="subtitle">Business Models Library</span>
+  <h1>Model Deep-Dives</h1>
+  <p>Every cannabis and hemp business model currently operating in Pennsylvania — with regulatory pathways, financial models, operations blueprints, and connections to education, employment, social impact, and science.</p>
+</div>
+</div>
+
+<section>
+<div class="container prose">
+
+  <h2>Quick Comparison</h2>
+  <p>At-a-glance across all 10 models. Click any model name for the full deep-dive.</p>
+
+  <div style="overflow-x: auto;">
+  <table>
+    <tr><th>Model</th><th>Capital</th><th>Revenue Potential</th><th>Barrier</th><th>Risk</th><th>Social Impact</th><th>Jobs Created</th></tr>
+    <tr><td><a href="model-cr.html">CR (Vertical Integration)</a></td><td>$10M+</td><td>$10M&ndash;$100M+</td><td>Extreme</td><td>Moderate</td><td>Low (permit cap limits)</td><td>200&ndash;500+</td></tr>
+    <tr><td><a href="model-dispensary.html">Stand-Alone Dispensary</a></td><td>$500K&ndash;$2M</td><td>$2M&ndash;$10M</td><td>High</td><td>Moderate</td><td>Moderate (local hiring)</td><td>10&ndash;30</td></tr>
+    <tr><td><a href="model-grower.html">Stand-Alone Grower/Processor</a></td><td>$5M&ndash;$20M</td><td>$3M&ndash;$20M</td><td>Extreme</td><td>High</td><td>Low</td><td>30&ndash;100</td></tr>
+    <tr><td><a href="model-hemp-farm.html">Hemp Cultivation</a></td><td>$5K&ndash;$50K/acre</td><td>$500&ndash;$5K/acre</td><td>Low</td><td>High (price)</td><td><strong>High</strong> (farm-based employment)</td><td>1&ndash;10</td></tr>
+    <tr><td><a href="model-hemp-process.html">Hemp Processing</a></td><td>$50K&ndash;$500K</td><td>Variable (20&ndash;50% margin)</td><td>Medium</td><td>High</td><td>Moderate</td><td>5&ndash;20</td></tr>
+    <tr><td><a href="model-retail.html">Farm Bill Retail</a></td><td>$50K&ndash;$200K</td><td>$200K&ndash;$2M</td><td>Low</td><td>Low&ndash;Mod</td><td><strong>High</strong> (accessible ownership)</td><td>2&ndash;8</td></tr>
+    <tr><td><a href="model-lab.html">Testing Lab</a></td><td>$100K&ndash;$500K+</td><td>$500K&ndash;$3M+</td><td>High</td><td>Moderate</td><td>Low</td><td>5&ndash;15</td></tr>
+    <tr><td><a href="model-ancillary.html">Ancillary Services</a></td><td>$0&ndash;$100K</td><td>$50K&ndash;$500K+</td><td>Lowest</td><td>Lowest</td><td><strong>High</strong> (solo/small business)</td><td>1&ndash;10</td></tr>
+    <tr><td><a href="model-education.html">Education &amp; Training</a></td><td>$0&ndash;$1M</td><td>$100K&ndash;$500K+</td><td>Low&ndash;High</td><td>Low</td><td><strong>High</strong> (workforce access)</td><td>1&ndash;20</td></tr>
+    <tr><td><a href="model-research.html">Research Contracting</a></td><td>$0 (institutional)</td><td>$50K&ndash;$500K/study</td><td>High (cred)</td><td>Low</td><td>Moderate (clinical access)</td><td>3&ndash;15</td></tr>
+  </table>
+  </div>
+
+  <div class="compare-row">
+    <div class="compare-card"><div class="val">10</div><div class="lbl">Models Covered</div></div>
+    <div class="compare-card"><div class="val">$0&ndash;$50M+</div><div class="lbl">Capital Range</div></div>
+    <div class="compare-card"><div class="val">5</div><div class="lbl">Social Impact Models</div></div>
+    <div class="compare-card"><div class="val">3</div><div class="lbl">Deep-Dives Available</div></div>
+  </div>
+
+  <h2>Available Deep-Dives</h2>
+  <p>Each deep-dive covers regulatory pathways, financial models, operations blueprints, talent pipelines, social impact integration, science &amp; tech, and audience-specific guidance for learners, educators, and employers.</p>
+
+  <div class="model-grid">
+    <div class="model-card">
+      <h3>Hemp Cultivation</h3>
+      <div class="meta">PDA Licensed &middot; Model #4</div>
+      <div class="tags"><span style="background: #d4edda; color: #155724;">Plant-Touching</span><span style="background: #cce5ff; color: #004085;">Low Capital</span><span style="background: #fff3cd; color: #856404;">High Risk</span></div>
+      <p>Growing industrial hemp for biomass, flower, grain, or fiber. The lowest-barrier entry point to plant-touching cannabis work in PA. Critical model for greenhouse social enterprise.</p>
+      <div class="stats"><div class="stat"><strong>Capital</strong>$5K&ndash;$50K/acre</div><div class="stat"><strong>Revenue</strong>$500&ndash;$5K/acre</div><div class="stat"><strong>Connects To</strong>Greenhouse, Social Impact</div><div class="stat"><strong>Regulator</strong>PDA</div></div>
+      <a href="model-hemp-farm.html" class="btn btn-primary">Read Deep-Dive</a>
+    </div>
+
+    <div class="model-card">
+      <h3>Farm Bill Compliant Retail</h3>
+      <div class="meta">General Retail &middot; Model #6</div>
+      <div class="tags"><span style="background: #d4edda; color: #155724;">Plant-Touching</span><span style="background: #cce5ff; color: #004085;">Low Capital</span><span style="background: #d4edda; color: #155724;">Low Risk</span></div>
+      <p>Retail stores selling hemp-derived CBD, THCA, and CBG products under the 2018 Farm Bill. No special cannabis license required. The fastest-growing segment and most accessible retail model.</p>
+      <div class="stats"><div class="stat"><strong>Capital</strong>$50K&ndash;$200K</div><div class="stat"><strong>Revenue</strong>$200K&ndash;$2M</div><div class="stat"><strong>Connects To</strong>Retail, Social Impact</div><div class="stat"><strong>Regulator</strong>General Business</div></div>
+      <a href="model-retail.html" class="btn btn-primary">Read Deep-Dive</a>
+    </div>
+
+    <div class="model-card">
+      <h3>Education &amp; Training</h3>
+      <div class="meta">Private or Institutional &middot; Model #9</div>
+      <div class="tags"><span style="background: #e2d5f3; color: #563d7c;">Ancillary</span><span style="background: #cce5ff; color: #004085;">Low Capital</span><span style="background: #d4edda; color: #155724;">Low Risk</span></div>
+      <p>Educational programs preparing students for cannabis careers. Covers both university programs and private training. Directly powers the LMS, university partnerships, and workforce pipeline.</p>
+      <div class="stats"><div class="stat"><strong>Capital</strong>$0&ndash;$1M</div><div class="stat"><strong>Revenue</strong>$100K&ndash;$500K+</div><div class="stat"><strong>Connects To</strong>LMS, Universities, Jobs</div><div class="stat"><strong>Regulator</strong>None (private)</div></div>
+      <a href="model-education.html" class="btn btn-primary">Read Deep-Dive</a>
+    </div>
+  </div>
+
+  <p style="font-size: .85rem; color: var(--text-light); text-align: center; margin-top: 1rem;">More deep-dives coming: CR, Dispensary, Grower/Processor, Hemp Processing, Testing Lab, Ancillary Services, Research Contracting.</p>
+
+  <div class="cta-section">
+    <h2>Which Model Fits You?</h2>
+    <p>Every path into PA's cannabis industry requires research and professional advice. These deep-dives are a starting point. The models we're covering first are the ones most connected to the hub's mission: accessible entry points, social impact potential, and workforce development.</p>
+    <a href="../get-involved.html" class="btn btn-primary">Contribute Your Knowledge</a>
+    <a href="../business-models.html" class="btn btn-secondary" style="margin-left: .5rem;">Back to Models Overview</a>
+  </div>
+
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+<div class="inner">
+  <div>
+    <h4>KeystoneCannabisHub</h4>
+    <p style="color: rgba(255,255,255,.5); font-size: .85rem;">Comprehensive resource for PA cannabis research, law, and education.</p>
+  </div>
+  <div>
+    <h4>Pages</h4>
+    <a href="../">Home</a>
+    <a href="../about.html">About</a>
+    <a href="../laws.html">Law</a>
+    <a href="../clinical-registrants/">Clinical Registrants</a>
+    <a href="../universities.html">Universities</a>
+    <a href="../education.html">Education</a>
+    <a href="../lms-portal.html">LMS Portal</a>
+    <a href="../job-placement.html">Job Placement</a>
+    <a href="../business-models.html">Business Models</a>
+    <a href="../science.html">Science</a>
+    <a href="../social-impact.html">Social Impact</a>
+    <a href="../get-involved.html">Get Involved</a>
+  </div>
+</div>
+<div class="copy">Built with public information. Not affiliated with any listed institution.</div>
+</div>
+</footer>
+</body>
+</html>
